@@ -1,4 +1,6 @@
-﻿namespace Varriables
+﻿using System.Collections.Specialized;
+
+namespace Varriables
 {
     internal class Program
     {
@@ -29,9 +31,34 @@
                 object nesne = "Bu bir nesnedir"; // object veri tipi, herhangi bir veri tipini saklayabilir. Farklı veri tiplerini tek bir değişkende tutmak için kullanılır.
                 object sayiNesnesi = 42; // object veri tipi, herhangi bir veri tipini saklayabilir. Farklı veri tiplerini tek bir değişkende tutmak için kullanılır.
                 object tarihNesnesi = new DateTime(2023, 10, 1); // object veri tipi, herhangi bir veri tipini saklayabilir. Farklı veri tiplerini tek bir değişkende tutmak için kullanılır.
-
                 
+                Runtime: Çalışma anında işlev görür. Uygulama sona erdiğinde hayatları sona ermektedir.
              */
+
+            //string isim = "Ahmet"; // string veri tipi, metin verilerini saklar.
+            //isim= "Mehmet";
+            //Console.WriteLine(isim); // Konsola isim değişkeninin değeri yazdırılır.
+
+            //Console.WriteLine(isim+"isim gir");
+            //String ad=Console.ReadLine(); // Kullanıcıdan isim girişi alınır.
+            //Console.WriteLine("Merhaba " + ad); // Kullanıcıya merhaba mesajı yazdırılır.
+            //Console.WriteLine("bir hata olustu tekrar ısım gir");
+            //ad=Console.ReadLine(); // Kullanıcıdan tekrar isim girişi alınır.   
+            //Console.WriteLine("Merhaba " + ad); // Kullanıcıya tekrar merhaba mesajı yazdırılır.
+            //Console.Read();
+
+            // Kodu düzene sokmak için CTRL + K + D tuşlarına basabilirsiniz.
+            // Açıklama satırlarını kaldırmak için CTRL + K + C tuşlarına basabilirsiniz.
+            Console.WriteLine("Ornek 1 ");
+            Console.Write("İsim bilgisi girin ");
+            string isim = Console.ReadLine(); // Kullanıcıdan isim girişi alınır.
+            Console.Write("Soyisim bilgisi girin ");
+            string soyisim = Console.ReadLine(); // Kullanıcıdan soyisim girişi alınır.
+            Console.Write("Yas bilgisini giriniz :");
+            string yasStr = Console.ReadLine(); // Kullanıcıdan yaş girişi alınır.
+
+            Console.WriteLine("\nMerhaba " + isim + " " + soyisim + ", yaşınız: " + yasStr); // Kullanıcıya merhaba mesajı yazdırılır.
+            Console.ReadLine(); // Konsolun kapanmaması için kullanıcıdan bir tuşa basması beklenir.
         }
     }
 }
