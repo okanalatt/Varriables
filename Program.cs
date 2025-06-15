@@ -61,7 +61,7 @@ namespace Varriables
             Console.WriteLine("\nMerhaba " + isim + " " + soyisim + ", yaşınız: " + yasStr); // Kullanıcıya merhaba mesajı yazdırılır.
             Console.ReadLine(); // Konsolun kapanmaması için kullanıcıdan bir tuşa basması beklenir.
 
-            byte sayi1= 255; // byte veri tipi, 0-255 aralığında tam sayıları saklar.
+            byte sayi1 = 255; // byte veri tipi, 0-255 aralığında tam sayıları saklar.
             // yas veri tipi byte olarak tanımlanabilir, ancak bu durumda yaşın 0-255 aralığında olması gerekir.
             sbyte yas = 25; // byte veri tipi, 0-255 aralığında tam sayıları saklar.
             short sayi2 = 32767; // short veri tipi, -32768 ile 32767 aralığında tam sayıları saklar.
@@ -89,6 +89,17 @@ namespace Varriables
             string name; // Default değeri null'dur.
             DateTime currentDate; // Default değeri 1/1/0001 12:00:00 AM'dir.
             long telefonNumarasi; // Default değeri 0'dır.
+            float fiyat2; // Default değeri 0.0'dır.
+            double maas; // Default değeri 0.0'dır.
+            decimal urunFiyati; // Default değeri 0.0'dır.
+            float ondalikSayi = 1.4f; // float veri tipi, ondalıklı sayıları saklar. F eki, float veri tipini belirtir.
+            decimal urunFiyati2 = 1.4m; // decimal veri tipi, ondalıklı sayıları saklar. m eki, decimal veri tipini belirtir.
+            //string interpolasyon kullanımı
+            string interpolasyon = $"Merhaba {isim} {soyisim}, yaşınız: {yasStr}"; // string interpolasyon kullanımı, değişkenleri metin içinde kullanmak için kullanılır.
+            int num1 = 17;
+            int num2 = 27;
+            Console.WriteLine($"Toplam: {num1 + num2}"); // string interpolasyon kullanımı, değişkenleri metin içinde kullanmak için kullanılır.
+            Console.ReadLine(); // Konsolun kapanmaması için kullanıcıdan bir tuşa basması beklenir.
 
         }
     }
